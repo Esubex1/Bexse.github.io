@@ -121,7 +121,7 @@ let prompt = require('prompt-sync')();
 //      downPayment = 5000 + 0.1 * (cost - 200000);
 //  }
 
-//  console.log(downPayment);
+ console.log(downPayment);
 
 
 
