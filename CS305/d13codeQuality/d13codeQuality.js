@@ -2,7 +2,14 @@
 
     module.exports={computeSalesCommission, compoundInterest, 
                         calcDownpayment,convertFahrenheit,calcDistance };
-      
+
+
+      /**
+       * Returns sales commission
+       * @param {boolean} isSalaried is true if salaried and false if not;
+       * @param {*} salesAmount is a positive integer;
+       * @returns salescommission
+       */
       function computeSalesCommission(isSalaried, salesAmount) {
         let rate, salesCommission;
       
@@ -27,7 +34,13 @@
         return  salesCommission;
       }
           
-      
+      /**
+       * 
+       * @param {Number} initialAmount is an integer;
+       * @param {Number} annualInterestRate is a positive integer;
+       * @param {Numnber} numYears is a postive number;
+       * @returns balance of initial amount after numbers of years
+       */
       
       function compoundInterest(initialAmount, annualInterestRate, numYears) {
         let numMonths = numYears * 12;
@@ -43,7 +56,11 @@
         return initialAmount;
       }
       
-      
+      /**
+       * 
+       * @param {number} cost is a positve number
+       * @returns downpayment
+       */
       
       function calcDownpayment(cost){
       let downPayment;
@@ -65,14 +82,25 @@
       
       return downPayment;
       }
-      
+      /**
+       * 
+       * @param {Number} temp an integer
+       * @returns temperature in celsius
+       */
       
       function convertFahrenheit(temp) {
         let tempIncelsius = (5 / 9) * (temp - 32);
       
         return tempIncelsius;
       }
-                
+         /**
+          * 
+          * @param {number } x1 is an integer
+          * @param {number } y1 is an integer
+          * @param {number } x2 is an integer
+          * @param {*numbe } y2 is an integer
+          * @returns distance of coordinates
+          */       
               
       
       function calcDistance(x1, y1, x2, y2) {
