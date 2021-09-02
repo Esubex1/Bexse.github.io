@@ -1,7 +1,7 @@
 'use strict';
 
- module.exports = {sum, multiply,maxOfThree, scoreExams};
- //findLongestWord, 
+ module.exports = {sum, multiply,maxOfThree, scoreExams, findLongestWord};
+ //, 
    
 // //Question #1
 
@@ -40,19 +40,19 @@ function multiply(arr){
     return multiple;
 }
 
-// function findLongestWord(arr){
-//     let longestWord = arr[0];
+function findLongestWord(arr){
+    let longestWord = arr[0];
 
-//     for (let i = 0; i< arr.length; i++){
+    for (let i = 0; i< arr.length; i++){
 
-//         if(arr[i].length > longestWord.length) {
-//             longestWord = arr[i];
-//         }
+        if(arr[i].length > longestWord.length) {
+            longestWord = arr[i];
+        }
         
-//     }
+    }
 
-//     return (longestWord.length);
-// }
+    return (longestWord.length);
+}
 // console.log(findLongestWord(["this", "is", "a word with spaces", "test", "longest"]));
 
 //  function reverseArray(arr){

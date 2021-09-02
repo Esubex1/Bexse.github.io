@@ -6,7 +6,7 @@ const myExports = require("./W1D4 Arrays.js");
 const maxOfThree = myExports.maxOfThree; 
 const multiply = myExports.multiply;
 const sum = myExports.sum;
-//const findLongestWord = myExports.findLongestWord;
+const findLongestWord = myExports.findLongestWord;
 const scoreExams = myExports.scoreExams;
 
 
@@ -70,25 +70,20 @@ describe("sum and multiply", function () {
 //*
 //3.	Write a function findLongestWord() that takes an array of words and returns the length of the longest one. 
 //
-// describe("findLongestWord", function () {
-//     it("tests longest", function () {
-//         assert.strictEqual(findLongestWord(["this", "is", "a", "test", "longest"]), 7);
-//     });
-//     it("tests longest with spaces", function () {
-//         assert.strictEqual(findLongestWord(["this", "is", "a word with spaces", "test", "longest"]), 18);
-//     });
-
-
-
-
-
-//     it("tests longest with equal length words", function () {
-//         assert.strictEqual(findLongestWord(["is", "is", "is", "is", "is"]), 2);
-//     });
-//     it("tests longest with some words equal length", function () {
-//         assert.strictEqual(findLongestWord(["this", "is", "this", "is", "is"]), 4);
-//     });
-// });
+describe("findLongestWord", function () {
+    it("tests longest", function () {
+        assert.strictEqual(findLongestWord(["this", "is", "a", "test", "longest"]), 7);
+    });
+    it("tests longest with spaces", function () {
+        assert.strictEqual(findLongestWord(["this", "is", "a word with spaces", "test", "longest"]), 18);
+    });
+    it("tests longest with equal length words", function () {
+        assert.strictEqual(findLongestWord(["is", "is", "is", "is", "is"]), 2);
+    });
+    it("tests longest with some words equal length", function () {
+        assert.strictEqual(findLongestWord(["this", "is", "this", "is", "is"]), 4);
+    });
+});
 
 
 // //
