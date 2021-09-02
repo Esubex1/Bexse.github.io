@@ -10,6 +10,8 @@
        * @param {*} salesAmount is a positive integer;
        * @returns salescommission
        */
+      /**
+      
       function computeSalesCommission(isSalaried, salesAmount) {
         let rate, salesCommission;
       
