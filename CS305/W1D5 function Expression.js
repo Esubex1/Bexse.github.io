@@ -2,7 +2,7 @@
 
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser
 */ 
-module.exports = {double, times100, myMap}; //add all of your function names here that you need for the node mocha tests
+module.exports = {double, times100, myMap, y, z}; //add all of your function names here that you need for the node mocha tests
 
 /**
  *@returns {number} double the input
@@ -33,23 +33,10 @@ function myMap(arr, func){
 }
 
 
-// function myMap (arr, 
-//     function (num) {
-//         return num *3;
-//     };
-//         )
+const y = function (num) {return num * 3};
+const z = (num) => num * 3;
 
-// //anonymous function 
-// function (num){
-//     return num *3;
-// }
 
-// // let y = function(num){
-// //     return num *3;
-// // }; 
-
-// // an arrow expression
-//  let y = (num) => num * 3;
 
 
 

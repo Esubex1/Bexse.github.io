@@ -8,7 +8,10 @@ const imports = require("./W1D5 function Expression.js");  //with node need the 
 const double = imports.double;  //do this for all of the functions used in the Mocha tests
 const myMap = imports.myMap;
 const times100 = imports.times100;
- //const y = imports.y;
+const y = imports.y;
+const z = imports.z;
+
+
 
 /* the following comment is needed when you run in the browser environment */
 /* global assert double times100 myMap  */
@@ -50,14 +53,14 @@ describe("times100", function () {
         });
     });
 
-    /* 4.	Demonstrate your myMap function with an anonymous function that triples the input value.  Write this as an anonymous function expression.  
-    Then write it using an arrow expression. */
-    // describe("myMap", function () {
-    //     const testArray = [-10, 0, 10, 20];
-    //     it("tests myMap on triples anonymous function", function () {
-    //         assert.deepStrictEqual(myMap(testArray, y), [-30, 0, 30, 60]);
-    //     });
-    //     it("tests myMap on triples arrow function", function () {
-    //         assert.deepStrictEqual(myMap(testArray, y), [-30, 0, 30, 60]);
-    //     });
-    // });
+    // /* 4.	Demonstrate your myMap function with an anonymous function that triples the input value.  Write this as an anonymous function expression.  
+    // Then write it using an arrow expression. */
+    describe("myMap", function () {
+        const testArray = [-10, 0, 10, 20];
+        it("tests myMap on triples anonymous function", function () {
+            assert.deepStrictEqual(myMap(testArray,  y = function (num) {return num * 3}), [-30, 0, 30, 60]);
+        });
+        it("tests myMap on triples arrow function", function () {
+            assert.deepStrictEqual(myMap(testArray,  z = (num) => num * 3), [-30, 0, 30, 60]);
+        });
+    });
