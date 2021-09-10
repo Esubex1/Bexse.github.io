@@ -1,11 +1,23 @@
 "use strict"
 
-module.exports = { groupById, unique, filterRangeInPlace, filterRange, Calculator }; //add all of your function names here that you need for the node mocha tests
-
+module.exports = { groupById, unique, filterRangeInPlace, filterRange}; 
+/**
+ * 
+ * @param {array} arr 
+ * @param {number} a integer
+ * @param {number} b integer
+ * @returns 
+ */
     function filterRange(arr, a, b) {
         return arr.filter(item => (a <= item && item <= b));
       }
       
+      /**
+       * 
+       * @param {array} arr 
+       * @param {number} a is integer
+       * @param {number} b is integer
+       */
     function filterRangeInPlace(arr, a, b) {
 
         for (let i = 0; i < arr.length; i++) {
@@ -18,12 +30,13 @@ module.exports = { groupById, unique, filterRangeInPlace, filterRange, Calculato
         }
       
       }
-
-  
+      /**
+       * 
+       * @param {array} arr 
+       */
 
   function unique(arr) {
-
-    function unique(arr) {
+   
         let result = [];
       
         for (let str of arr) {
@@ -35,11 +48,12 @@ module.exports = { groupById, unique, filterRangeInPlace, filterRange, Calculato
         return result;
       }
       
-      let strings = ["Hare", "Krishna", "Hare", "Krishna",
-        "Krishna", "Krishna", "Hare", "Hare", ":-O"
-      ];
-  }
-
+ 
+/**
+ * 
+ * @param {object} array containing objects
+ * @returns an object 
+ */
 
   function groupById(array) {
     return array.reduce((obj, value) => {
