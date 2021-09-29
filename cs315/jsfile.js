@@ -1,4 +1,5 @@
 'use strict';
+
 function clickToAdd(){
     let input = document.getElementById("input");
     let result = input.value;
