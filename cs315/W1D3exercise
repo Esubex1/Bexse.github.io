@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 3 </title>
+</head>
+<body>
+          <p> Item Name</p>
+            <input id="item" type="text" value="Computers" /> <br>
+           <p> Item Category</p>
+           <input id="item" type="text" value="Digitals" /> <br>
+           <p> Quantity</p>
+            <input id="item" type="text" value="100" /> <br>
+            <p> 
+
+                <input id="adding" type="button" value="Add" onclick="Add()"/>
+                <input id="editing" type="button" value="Edit" onclick="Edit()"/>
+                <input id="removing" type="button" value="Remove" onclick="Remove()"/>
+            </p>
+                   
+
+            <table>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                </tr>
+                                                
+                <tr>
+                    <td> Computers</td>
+                    <td> Digital</td>
+                    <td>100</td>
+                </tr>
+    
+                <tr>
+                 <td>Magazines</td>
+                 <td>Conviemnce</td>
+                 <td> 1000</td>
+
+                </tr>
+                
+                <tr>
+                <td>Books</td>
+                <td>Education</td>
+                <td>20</td>
+                </tr>
+
+            </table>
+            
+            </body>
+            </html>
