@@ -25,15 +25,17 @@ td{
 body{
         background-color:lightyellow;
     }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+
 .header{
 
     background-color: rgb(250, 250, 250);
     text-decoration: tan;
     margin:auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
 .top-bar a {       
@@ -65,17 +67,26 @@ a:hover{
 .horizontal{
    border-top: 2px solid ;
 }
+
 .posts{
     margin-top:5px;
     padding-top:10px;
 }
+
+.post2{
+    margin-right: 2px;
+    padding-right: 100px;
+    text-align:left;
+
+}
+
 .posts li, .pages li, .categories li, .recent-posts li{
     list-style-type:none;
 }
-li:hover{
-  color:aqua;
-}
 
+li:hover{
+   background-color:aqua;
+}
 
 .images{
   margin: auto;
@@ -84,11 +95,5 @@ li:hover{
   height:140px;
   margin:2px;
   float:left;
- 
-}
-.post2{
-    margin-right: 2px;
-    padding-right: 100px;
-    text-align:left;
+ }
 
-}
