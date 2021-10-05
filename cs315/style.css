@@ -69,6 +69,10 @@ a:hover{
     margin-top:5px;
     padding-top:10px;
 }
+.posts li, .pages li, .categories li, .recent-posts li{
+    list-style-type:none;
+}
+
 .images{
   margin: auto;
   border:1px solid #ccc;
