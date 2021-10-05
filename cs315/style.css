@@ -72,6 +72,10 @@ a:hover{
 .posts li, .pages li, .categories li, .recent-posts li{
     list-style-type:none;
 }
+li:hover{
+    background-color:aqua
+}
+
 
 .images{
   margin: auto;
