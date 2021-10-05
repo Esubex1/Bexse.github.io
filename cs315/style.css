@@ -45,8 +45,8 @@ body{
   text-decoration: none;
   background-color: azure;
 }
-.top-bar a :hover{
-    color: black;
+a:hover{
+    color: rgb(241, 187, 11);
 }
 .bid{
        float: left;
