@@ -118,3 +118,44 @@ li:hover{
   margin-top: 2px;
 }
 
+flex-container{
+  display: flex;
+  flex-flow: column wrap;
+  background-color:rgb(150, 163, 177);
+  row-gap:100px;
+  margin:0.8em;
+  
+   }
+
+.one, .two, .three {padding:0.5em;
+    margin:0.2em;
+    border-right: 0.5em;
+
+}
+ .one{
+    display:flex;
+    justify-content:space-between;
+    background-color:rgb(203, 206, 203);
+            
+ }
+ .two:first-of-type(2):div:first-child{
+       color: green 
+ }
+ 
+ .two{
+     display: flex;
+        justify-content:space-between;
+     flex-direction: row-reverse;
+     background-color:rgb(240, 239, 238);
+    
+ }
+ .three{
+     display:flex;
+     flex:auto;
+     justify-content:space-between;
+     background-color:rgb(182, 199, 235);
+   
+
+ }
+
+ 
