@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d7b0af116a.js" crossorigin="anonymous"></script>
+    <style>
+
+    .grid-container{
+       display:grid;
+       grid-template-columns:auto auto auto;
+       grid-auto-rows: minmax(200px, auto);
+       grid-gap:25px;
+       background-color:rgb(17, 16, 16);
+       padding:40px;
+       
+    }
+ 
+    .grid-2{
+       display:grid;
+       grid-template-columns:1fr 1fr;
+       background-color:rgb(17, 16, 16);
+       grid-auto-rows: minmax(40px, auto);
+       grid-gap: 0.3px;
+     
+    } 
+   
+    .images{
+        object-fit: contain;
+        max-width: 100px;
+        padding: 0.2em
+    }
+
+    ul {
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        text-decoration: none;
+        overflow: hidden;
+      
+    }
+    
+    li  {
+        float:left;
+        padding:5px;
+      
+    }
+
+    #myEmail{background-color:black;
+        color:white;
+        border-radius: 25px;
+        padding: 8px;
+        font-family: sans;
+        font-size:16px;
+        border-bottom: 1px none black ;
+        border-top: 1px none black ;
+    }
+
+    #mySend{ color:white; 
+        background-color:orange;
+        border-radius: 25px;
+        padding: 8px;
+        margin:-50px;
+        border-bottom: 0.5px none black ;
+    }
+
+    .footer a {
+        color:white;
+        text-decoration: none;
+        padding:10px;
+        justify-content: space-evenly;
+        margin-bottom:5px;
+        border-top: 1px none black ;
+
+    }
+
+    .footer{
+        background-color:black;
+    }
+
+    #about-us{
+        color: white;
+        font-style: normal;
+        font-weight:bold;
+        font-family: sans-serif;
+        font-size:14px;
+    }
+
+    .about-us {
+        color: rgb(145, 135, 135);
+    }
+
+    .latesTweet {
+        color: rgb(145, 135, 135);
+        font-style: italic;
+    }
+
+    .instegram{
+        color: rgb(145, 135, 135);
+    }
+ 
+    .fab {
+     padding:4px;
+     background-color:black;
+     border:0;
+     float:left;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="grid-container">
+
+      <div class="about-us"><p id="about-us">About Us</p>
+
+            <div class="firstpar"><p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, illum.</p></div>
+            
+            <div class="phone"><p style="color:white"> <i class="fas fa-phone-alt" style="padding:5px;"></i>+1 291 3912 329 </p></div>
+            <div class="phone"><p style="color:white"><i class="far fa-envelope"style="padding:5px;"></i> info@gmail.com </p></div>
+
+            <div class="email"><p>
+                <input type="text" placeholder="Enter your email" id="myEmail">
+                <input type="button" value="Send" id="mySend">
+             </p></div>
+      </div>
+
+       <div class="latesTweet" > <p id="about-us">Latest Tweet</p>
+            <div class="content"><ul> <li> <i class="fab fa-twitter-square"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li></ul></div>
+            <div class="content"><ul> <li> <i class="fab fa-twitter-square"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li></ul> </div>
+            <div class="content"><ul> <li> <i class="fab fa-twitter-square"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li></ul></div> 
+       </div>  
+
+        <div class="instegram"> <p id="about-us">Instagram</p> 
+            <div class="grid-2">
+                <div class="image1"><img src="image/image4.jpg" alt="Forest" class="images"> </div> 
+                <div class="image2"><img src="image/image5.jpg" alt="Forest" class="images"> </div>   
+                <div class="image3"><img src="image/image6.jpg" alt="Forest" class="images"> </div>   
+                <div class="image4"><img src="image/image6.jpg" alt="Forest" class="images"> </div>   
+            </div>
+
+        </div> 
+    </div>
+      
+        <div class="footer"> 
+            <ul> 
+                <hr style="height:1px;border-width:0; margin:20px;color:black; background-color:lightslategrey">
+                <li><a href="">Home </a> </li>
+                <li> <a href="">About </a></li>
+                <li> <a href="">Our Words </a></li>
+                <li> <a href="">Services</a> </li>
+                <li> <a href="">Blog </a></li>
+                <li> <a href="">Contacts </a></li>
+                <li> <a href="" style="margin-left:350px";>Colorlib </a></li>
+
+            </ul>
+
+    </div>
+
+    
+</body>
+</html>
