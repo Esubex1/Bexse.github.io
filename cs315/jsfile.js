@@ -39,3 +39,43 @@ function substraction(){
  document.body.append(p);
 }
 
+
+const email= document.getElementById('email')
+const fname = document.getElementById('firstName')
+const lname = document.getElementById('lastName')
+const password = document.getElementById('password')
+const reTypepassword = document.getElementById('retypepassword')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if(email.value==='') {
+      message.push("Please enter a valid email address")
+  }
+  if (fname.value === '' || fname.value == null) {
+    messages.push('First Name is required')
+  }
+  if (lname.value === '' || lname.value == null) {
+    messages.push('Last Name is required')
+  }
+  
+  if (password.value.length < 8) {
+    messages.push('Password must be longer than 8 and less than 14 characters')
+  }
+
+  if (password.value.length > 14) {
+    messages.push('Password must be less than 14 characters')
+  }
+
+  if (password.value != reTypepassword.value ) {
+    messages.push("Passwords Don't match")
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
+  }
+})
+
+
