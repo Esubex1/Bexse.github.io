@@ -40,6 +40,10 @@ function substraction(){
 }
 
 
+
+
+form.addEventListener('submit', (e) => {
+    
 const email= document.getElementById('email')
 const fname = document.getElementById('firstName')
 const lname = document.getElementById('lastName')
@@ -47,8 +51,8 @@ const password = document.getElementById('password')
 const reTypepassword = document.getElementById('retypepassword')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
-
-form.addEventListener('submit', (e) => {
+    
+    
   let messages = []
   if(email.value==='') {
       message.push("Please enter a valid email address")
